@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Header from './components/header'
+import Hero from './components/hero'
 import Projects from './components/projects.jsx'
 import Skills from './components/skills.jsx'
 import Footer from './components/footer'
@@ -20,10 +21,6 @@ export default function Home() {
     })
     setEntry(projects)
   }
-  useEffect(() =>{
-    fetchData()
-    fetchSkills()
-  },[])
   const fetchSkills = async() =>{
     const res = await fetch('/api/skills');
     const data = await res.json();
@@ -32,10 +29,15 @@ export default function Home() {
     })
     setSkills(ski)
   }
+  useEffect(() =>{
+    fetchData()
+    fetchSkills()
+  },[])
   
   return (
     <main className='grid place-content-center'>
         <Header />
+        <Hero />
         <h2 className=' p-4 text-center text-3xl font-bold'>
             Projects
           </h2>

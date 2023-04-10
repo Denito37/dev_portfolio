@@ -1,5 +1,5 @@
 
-const header = () => {
+export default function Header(){
   return (
     <header >
         <h2 className=' text-4xl text-center p-6'>
@@ -8,5 +8,3 @@ const header = () => {
     </header>
   )
 }
-
-export default header
