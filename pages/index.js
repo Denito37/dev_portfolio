@@ -14,7 +14,7 @@ export default function Home() {
   const [entry, setEntry] = useState([]);
   const [skills, setSkills] = useState([])
   
-  const fetchData = async() =>{
+  const fetchProjects = async() =>{
     const res = await fetch('/api/hello');
     const data = await res.json();
     const projects = data.map(project =>{
@@ -31,7 +31,7 @@ export default function Home() {
     setSkills(ski)
   }
   useEffect(() =>{
-    fetchData()
+    fetchProjects()
     fetchSkills()
   },[])
   
@@ -46,7 +46,7 @@ export default function Home() {
           <h2 className=' p-4 text-center text-3xl font-bold'>
             Skills
           </h2>
-          <article className=' grid md:grid-cols-2 max-w-5xl justify-items-center'>
+          <article className=' grid md:grid-cols-2 max-w-6xl justify-items-center'>
             {skills}
           </article>
         <Footer /> 
