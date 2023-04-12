@@ -3,9 +3,9 @@ export default function Projects({ entry }){
     return(
         <section className=" text-center md:text-left p-4 m-4 max-w-6xl border rounded-2xl md:grid md:grid-cols-6 gap-4 justify-items-center items-center">
             <div>
-                <h2 className=" p-2 md:p-0 text-3xl">
+                <h3 className=" p-2 md:p-0 text-3xl font-extralight">
                     {entry.title}
-                </h2>
+                </h3>
                 <p className=" text-sm p-2 md:p-0">
                     {entry.stack}
                 </p>
