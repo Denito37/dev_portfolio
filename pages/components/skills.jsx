@@ -15,20 +15,20 @@ export default function Skills({ entry }){
             </h2>
             <div className=" flex flex-col items-center">
                 { entry.title === 'Technical' ? 
-                    <Image src={JS} alt="JavaScript" width={100} height={100} className=" my-4" />
-                : <Image src={CSS} alt="CSS" width={100} height={100} className=" my-4" />
+                    <Image src={JS} alt="JavaScript" width={100} height={'auto'} className=" my-4" />
+                : <Image src={CSS} alt="CSS" width={100} height={'auto'} className=" my-4" />
                 }
                 { entry.title === 'Technical' ? 
-                    <Image src={react} alt="ReactJS" width={100} height={100} className=" my-4" />
-                : <Image src={tailwind} alt="TailwindCSS" width={100} height={100} className=" my-4" />
+                    <Image src={react} alt="ReactJS" width={100} height={'auto'} className=" my-4" />
+                : <Image src={tailwind} alt="TailwindCSS" width={100} height={'auto'} className=" my-4" />
                 }
                 { entry.title === 'Technical' ? 
-                    <Image src={HTML} alt="HTML5" width={100} height={100} className=" my-4" />
-                : <Image src={figma} alt="Figma" width={100} height={100} className=" my-4" />
+                    <Image src={HTML} alt="HTML5" width={100} height={'auto'} className=" my-4" />
+                : <Image src={figma} alt="Figma" width={100} height={'auto'} className=" my-4" />
                 }
                 { entry.title === 'Technical' ? 
-                    <Image src={devTools} alt="Chrome Dev Tools" width={100} height={100} className=" my-4" />
-                : <Image src={UIUX} alt="UI & UX" width={100} height={100} className=" my-4" />
+                    <Image src={devTools} alt="Chrome Dev Tools" width={'auto'} height={100} className=" my-4" />
+                : <Image src={UIUX} alt="UI & UX" width={100} height={'auto'} className=" my-4" />
                 }
                 
             </div>

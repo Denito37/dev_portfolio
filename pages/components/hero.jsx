@@ -17,8 +17,10 @@ export default function Hero(){
 
             <Image 
                 src={AG} 
+                width={'auto'}
                 height={350} 
                 alt='Project image' 
+                priority
                 className='md:rounded-2xl' />
         </article>
     )

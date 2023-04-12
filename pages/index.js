@@ -1,40 +1,16 @@
-import Image from 'next/image'
-import Head from 'next/head'
 import Header from './components/header'
 import Hero from './components/hero'
 import Projects from './components/projects.jsx'
 import Skills from './components/skills.jsx'
 import Footer from './components/footer'
-import { Inter } from 'next/font/google'
-import { useState, useEffect } from 'react'
 
-const inter = Inter({ subsets: ['latin'] })
+export default function Home({ data, dataTwo }) {
+  const projects = data.map(project =>{
+    return <Projects key={project.id} entry={project} />
+  })
+  const skills = dataTwo.map( skill => {
+    return <Skills key={skill.id} entry={skill} />})
 
-export default function Home() {
-  const [entry, setEntry] = useState([]);
-  const [skills, setSkills] = useState([])
-  
-  const fetchProjects = async() =>{
-    const res = await fetch('/api/hello');
-    const data = await res.json();
-    const projects = data.map(project =>{
-      return <Projects key={project.id} entry={project} />
-    })
-    setEntry(projects)
-  }
-  const fetchSkills = async() =>{
-    const res = await fetch('/api/skills');
-    const data = await res.json();
-    const ski = data.map( skill => {
-        return <Skills key={skill.id} entry={skill} />
-    })
-    setSkills(ski)
-  }
-  useEffect(() =>{
-    fetchProjects()
-    fetchSkills()
-  },[])
-  
   return (
     <main className='grid place-content-center'>
         <Header />
@@ -42,7 +18,7 @@ export default function Home() {
         <h2 className=' p-4 text-center text-3xl font-bold'>
             Projects
           </h2>
-          {entry}
+          {projects}
           <h2 className=' p-4 text-center text-3xl font-bold'>
             Skills
           </h2>
@@ -52,4 +28,13 @@ export default function Home() {
         <Footer /> 
     </main>
   )
+}
+export async function getStaticProps(){
+    const res = await fetch ('http://localhost:3000/api/hello')
+    const data = await res.json()
+    const resTwo = await fetch ('http://localhost:3000/api/skills')
+    const dataTwo = await resTwo.json()
+    return { 
+      props: { data, dataTwo} 
+    };
 }
