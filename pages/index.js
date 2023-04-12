@@ -1,8 +1,8 @@
-import Header from './components/header'
-import Hero from './components/hero'
-import Projects from './components/projects.jsx'
-import Skills from './components/skills.jsx'
-import Footer from './components/footer'
+import Header from '../src/components/header'
+import Hero from '../src/components/hero'
+import Projects from '../src/components/projects.jsx'
+import Skills from '../src/components/skills.jsx'
+import Footer from '../src/components/footer'
 
 export default function Home({ data, dataTwo }) {
   const projects = data.map(project =>{
