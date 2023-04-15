@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Header from '../src/components/header'
 import Hero from '../src/components/hero'
 import Projects from '../src/components/projects.jsx'
@@ -15,6 +16,11 @@ export default function Home() {
   })
 
   return (
+    <>
+    <Head>
+      <title>Dennes Dev Portfolio</title>
+      <meta name="description" content="Front-end web dev portfolio"></meta>
+    </Head>
     <main className='grid place-content-center'>
         <Header />
         <Hero />
@@ -30,5 +36,6 @@ export default function Home() {
           </article>
         <Footer /> 
     </main>
+    </>
   )
 }

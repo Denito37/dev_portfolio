@@ -17,28 +17,28 @@ export default function Skills({ entry }){
             </h3>
             <div className=" flex flex-col items-center">
                 { entry.title === 'Technical' ? 
-                    <Image src={JS} alt="JavaScript" width={100} height={'auto'} className=" my-4" /> : 
-                    <Image src={CSS} alt="CSS" width={100} height={'auto'} className=" my-4" />
+                    <Image title="JavaScript" src={JS} alt="JavaScript" width={100} height={'auto'} className=" my-4" /> : 
+                    <Image title="CSS" src={CSS} alt="CSS" width={100} height={'auto'} className=" my-4" />
                 }
                 { entry.title === 'Technical' ? 
-                    <Image src={react} alt="ReactJS" width={100} height={'auto'} className=" my-4" /> :
-                    <Image src={tailwind} alt="TailwindCSS" width={100} height={'auto'} className=" my-4" />
+                    <Image title="ReactJS" src={react} alt="ReactJS" width={100} height={'auto'} className=" my-4" /> :
+                    <Image title="TailwindCSS" src={tailwind} alt="TailwindCSS" width={100} height={'auto'} className=" my-4" />
                 }
                 { entry.title === 'Technical' ? 
-                    <Image src={next} alt="ReactJS" width={100} height={'auto'} className=" my-4" /> :
+                    <Image title="NextJS" src={next} alt="ReactJS" width={100} height={'auto'} className=" my-4" /> :
                     null
                 }
                 { entry.title === 'Technical' ? 
-                    <Image src={git} alt="ReactJS" width={100} height={'auto'} className=" my-4" /> : 
+                    <Image title="HTML5" src={HTML} alt="HTML5" width={100} height={'auto'} className=" my-4" /> : 
+                    <Image title="Figma" src={figma} alt="Figma" width={100} height={'auto'} className=" my-4" />
+                }
+                { entry.title === 'Technical' ? 
+                    <Image title="Git" src={git} alt="ReactJS" width={100} height={'auto'} className=" my-4" /> : 
                     null
                 }
                 { entry.title === 'Technical' ? 
-                    <Image src={HTML} alt="HTML5" width={100} height={'auto'} className=" my-4" /> : 
-                    <Image src={figma} alt="Figma" width={100} height={'auto'} className=" my-4" />
-                }
-                { entry.title === 'Technical' ? 
-                    <Image src={devTools} alt="Chrome Dev Tools" width={'auto'} height={100} className=" my-4" /> : 
-                    <Image src={UIUX} alt="UI & UX" width={100} height={'auto'} className=" my-4" />
+                    <Image title="Chrome Dev Tools" src={devTools} alt="Chrome Dev Tools" width={75} height={75} className=" my-4" /> : 
+                    <Image title="User Interface & Experience" src={UIUX} alt="UI & UX" width={100} height={'auto'} className=" my-4" />
                 } 
             </div>
         </section>

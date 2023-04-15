@@ -2,7 +2,7 @@ import AG from 'public/AG.jpg'
 import Image from 'next/image'
 export default function Hero(){
     return(
-        <article className=' md:grid md:grid-cols-2 max-w-6xl my-8 '>
+        <article className=' md:grid md:grid-cols-2 md:gap-2 max-w-6xl my-8 md:my-12 '>
             <section>
                 <h2 className=' text-center p-3 text-4xl md:text-5xl font-bold'>
                     Featured Project:
