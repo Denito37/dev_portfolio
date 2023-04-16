@@ -13,14 +13,14 @@ export default function Projects({ entry }){
                 <p className=" text-sm text-center font-extralight p-2 lg:p-0">
                     {entry.stack}
                 </p>
-                <ul className=" flex w-full justify-center">
+                <div className=" flex w-full justify-center">
                     <Link href={entry.site} target="_blank" rel="noopener noreferrer" className=" p-2 rounded-lg text-center transition-colors hover:bg-slate-100 hover:text-zinc-900">
                         Live Site
                     </Link>
                     <Link href={entry.repo} target="_blank" rel="noopener noreferrer" className=" p-2 rounded-lg text-center transition-colors hover:bg-slate-100 hover:text-zinc-900">
                         Github Repo
                     </Link>
-                </ul>
+                </div>
             </div>
             <p className=" p-2 lg:p-0 text-xl col-span-3 max-w-[70ch] lg:max-w-[50ch]">
                 {entry.description}

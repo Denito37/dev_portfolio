@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Image from 'next/image'
+import WF from 'public/wireFrame.svg'
 import Header from '../src/components/header'
 import Hero from '../src/components/hero'
 import Projects from '../src/components/projects.jsx'
@@ -22,6 +24,12 @@ export default function Home() {
       <meta name="description" content="Front-end web dev portfolio"></meta>
     </Head>
     <main className='grid place-content-center'>
+      <Image 
+          src={WF} 
+          alt='background image ; wireframe wave' 
+          priority
+          className=' fixed -z-10 bottom-0 w-full opacity-50' 
+          />
         <Header />
         <Hero />
         <h2 className=' p-4 text-center text-3xl font-medium'>
