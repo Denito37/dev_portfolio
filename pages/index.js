@@ -28,7 +28,7 @@ export default function Home() {
           src={WF} 
           alt='background image ; wireframe wave' 
           priority
-          className=' fixed -z-10 bottom-0 w-full opacity-50' 
+          className=' fixed -z-10 bottom-0 lg:bottom-[-17.5%] w-full opacity-40' 
           />
         <Header />
         <Hero />
