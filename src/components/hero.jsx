@@ -1,27 +1,19 @@
-import AG from 'public/AG.jpg'
-import Image from 'next/image'
+
 export default function Hero(){
     return(
-        <article className=' md:grid md:grid-cols-2 md:gap-2 max-w-6xl my-8 md:my-12 '>
+        <article className=' w-fit mx-auto max-w-6xl my-8 md:my-12 '>
             <section>
-                <h2 className=' text-center p-3 text-4xl md:text-5xl font-bold'>
-                    Featured Project:
-                </h2>
-                <h3 className='text-center p-3 text-3xl'>
-                    Advice Generator
+                <h3 className=' w-fit mx-auto text-center p-3 text-4xl md:text-5xl font-bold typeOutTitle'>
+                    Hello,
                 </h3>
-                <p className='text-center p-3 mx-auto text-xl max-w-[40ch]'>
-                    A fun pastime that gets quotes of great advice from an external API
+                <h3 className= 'w-fit mx-auto text-center p-3 text-3xl typeOut '>
+                    My name is Dennes
+                </h3>
+                <p className='text-center p-3 mx-auto text-xl max-w-[40ch] fadeIn'>
+                    I am a Front-end Web developer with over a year of experience developing
+                    websites that are easy to use and pleasant to the eye.
                 </p>
             </section>
-
-            <Image 
-                src={AG} 
-                width={'auto'}
-                height={350} 
-                alt='Project image' 
-                priority
-                className='md:rounded-2xl' />
         </article>
     )
 }

@@ -24,11 +24,11 @@ export default function Home() {
     <main className='grid place-content-center'>
         <Header />
         <Hero />
-        <h2 className=' p-4 text-center text-3xl font-bold'>
+        <h2 className=' p-4 text-center text-3xl font-medium'>
             Projects
           </h2>
           {projects}
-          <h2 className=' p-4 text-center text-3xl font-bold'>
+          <h2 className=' p-4 text-center text-3xl font-medium'>
             Skills
           </h2>
           <article className=' grid md:grid-cols-2 max-w-6xl justify-items-center'>

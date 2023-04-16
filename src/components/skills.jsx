@@ -15,7 +15,7 @@ export default function Skills({ entry }){
             <h3 className=" text-3xl font-extralight p-4 my-2">
                 {entry.title}
             </h3>
-            <div className=" flex flex-col items-center">
+            <div className=" grid grid-cols-2 gap-4 justify-items-center items-center">
                 { entry.title === 'Technical' ? 
                     <Image title="JavaScript" src={JS} alt="JavaScript" width={100} height={'auto'} className=" my-4" /> : 
                     <Image title="CSS" src={CSS} alt="CSS" width={100} height={'auto'} className=" my-4" />
