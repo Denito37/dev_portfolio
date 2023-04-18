@@ -5,9 +5,9 @@ import CC from 'public/CC.png'
 import DD from 'public/DD.jpg'
 export default function Projects({ entry }){
     return(
-        <section className=" text-center bg-zinc-950 lg:text-left p-4 m-4 max-w-6xl border rounded-2xl lg:grid lg:grid-cols-7 gap-4 justify-items-center items-center">
+        <section className=" text-center bg-zinc-950 md:text-left p-4 m-4 max-w-6xl border rounded-2xl md:grid md:grid-cols-7 gap-4 justify-items-center items-center">
             <div className=" col-span-2">
-                <h3 className=" p-2 lg:p-0 text-3xl font-extralight">
+                <h3 className=" p-2 lg:p-0 text-3xl md:text-2xl lg:text-3xl font-medium">
                     {entry.title}
                 </h3>
                 <p className=" text-sm text-center font-extralight p-2 lg:p-0">
@@ -22,7 +22,7 @@ export default function Projects({ entry }){
                     </Link>
                 </div>
             </div>
-            <p className=" p-2 lg:p-0 text-xl col-span-3 max-w-[70ch] lg:max-w-[50ch]">
+            <p className=" font-light p-2 lg:p-0 text-xl col-span-3 max-w-[70ch] lg:max-w-[50ch]">
                 {entry.description}
             </p>
             

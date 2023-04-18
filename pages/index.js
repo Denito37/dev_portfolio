@@ -5,6 +5,7 @@ import Header from '../src/components/header'
 import Hero from '../src/components/hero'
 import Projects from '../src/components/projects.jsx'
 import Skills from '../src/components/skills.jsx'
+import About from '@/src/components/about'
 import Footer from '../src/components/footer'
 import projectData from '../src/components/dat/projects.json'
 import skillsData from '../src/components/dat/skills.json'
@@ -28,7 +29,7 @@ export default function Home() {
           src={WF} 
           alt='background image ; wireframe wave' 
           priority
-          className=' fixed -z-10 bottom-0 lg:bottom-[-17.5%] w-full opacity-40' 
+          className=' fixed -z-10 bottom-0 lg:bottom-[-15%] w-full opacity-40' 
           />
         <Header />
         <Hero />
@@ -42,7 +43,10 @@ export default function Home() {
           <article className=' grid md:grid-cols-2 max-w-6xl justify-items-center'>
             {skills}
           </article>
-        <Footer /> 
+          <div className=' max-w-5xl mx-auto grid justify-items-center items-center md:grid-cols-2'>
+            <About />
+            <Footer /> 
+          </div>
     </main>
     </>
   )

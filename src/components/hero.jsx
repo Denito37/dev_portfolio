@@ -9,7 +9,7 @@ export default function Hero(){
                 <h3 className= 'text-center p-2 text-3xl fadeIn '>
                     My name is Dennes
                 </h3>
-                <p className='text-center p-2 mx-auto text-xl max-w-[50ch] fadeIn'>
+                <p className='text-center font-light p-2 mx-auto text-xl max-w-[50ch] fadeIn'>
                     I am a Front-end Web developer with over a year of experience developing
                     websites that are easy to use and pleasant to the eye.
                 </p>
