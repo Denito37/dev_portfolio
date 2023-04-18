@@ -26,9 +26,9 @@ export default function Projects({ entry }){
                 {entry.description}
             </p>
             
-            {entry.title === 'Advice Generator' && <Image src={AG} alt="Advice Generator" width={250} height={250} className=" my-2  mx-auto col-span-2  rounded-lg transition-transform hover:scale-125 lg:hover:scale-[1.38]" />}
-            {entry.title === 'CSS Collection' && <Image src={CC} alt="CSS Collection" width={250} height={250} className=" my-2 mx-auto col-span-2  rounded-lg transition-transform hover:scale-125 lg:hover:scale-[1.38]" />}
-            {entry.title === 'Dictionary Dynamo' && <Image src={DD} alt="Dictionary Dynamo" width={250} height={250} className=" my-2 mx-auto col-span-2  rounded-lg transition-transform hover:scale-125 lg:hover:scale-[1.38]" />}
+            {entry.title === 'Advice Generator' && <Image src={AG} alt="Advice Generator" width={250} height={250} className=" my-2  mx-auto col-span-2  rounded-lg transition-transform scale-110 md:scale-100" />}
+            {entry.title === 'CSS Collection' && <Image src={CC} alt="CSS Collection" width={250} height={250} className=" my-2 mx-auto col-span-2  rounded-lg transition-transform scale-110 md:scale-100" />}
+            {entry.title === 'Dictionary Dynamo' && <Image src={DD} alt="Dictionary Dynamo" width={250} height={250} className=" my-2 mx-auto col-span-2  rounded-lg transition-transform scale-110 md:scale-100" />}
         </section>
     )
 }

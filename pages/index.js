@@ -29,7 +29,7 @@ export default function Home() {
           src={WF} 
           alt='background image ; wireframe wave' 
           priority
-          className=' fixed -z-10 bottom-0 lg:bottom-[-15%] w-full opacity-40' 
+          className=' fixed -z-10 bottom-0 md:bottom-[-15%] w-full opacity-40' 
           />
         <Header />
         <Hero />
@@ -43,7 +43,7 @@ export default function Home() {
           <article className=' grid md:grid-cols-2 max-w-6xl justify-items-center'>
             {skills}
           </article>
-          <div className=' max-w-5xl mx-auto grid justify-items-center items-center md:grid-cols-2'>
+          <div className=' max-w-5xl mx-auto grid justify-items-center md:grid-cols-2'>
             <About />
             <Footer /> 
           </div>

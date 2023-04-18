@@ -6,7 +6,7 @@ import { useState } from "react"
 export default function Footer() {
     const [popUp, setPopup] = useState(false)
     return (
-    <footer className=" p-8 mx-auto relative items-center">
+    <footer className=" p-1 mx-auto md:my-12 relative">
 
         {popUp ? <div className=" absolute top-0 left-[40%] p-4 text-center bg-green-100 text-green-700 rounded-2xl z-10">Copied</div> :null}
 
