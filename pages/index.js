@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import WF from 'public/wireFrame.svg'
+import icon from 'public/DWD.png'
 import Header from '../src/components/header'
 import Hero from '../src/components/hero'
 import Projects from '../src/components/projects.jsx'

@@ -3,6 +3,7 @@ import Image from "next/image"
 import AG from 'public/AG.jpg'
 import CC from 'public/CC.png'
 import DD from 'public/DD.jpg'
+import WS from 'public/WS.jpg'
 export default function Projects({ entry }){
     return(
         <section className=" text-center bg-zinc-950 md:text-left p-4 m-4 max-w-6xl border rounded-2xl md:grid md:grid-cols-7 gap-4 justify-items-center items-center">
@@ -28,7 +29,7 @@ export default function Projects({ entry }){
             
             {entry.title === 'Advice Generator' && <Image src={AG} alt="Advice Generator" width={250} height={250} className=" my-2  mx-auto col-span-2  rounded-lg transition-transform scale-110 md:scale-100" />}
             {entry.title === 'CSS Collection' && <Image src={CC} alt="CSS Collection" width={250} height={250} className=" my-2 mx-auto col-span-2  rounded-lg transition-transform scale-110 md:scale-100" />}
-            {entry.title === 'Dictionary Dynamo' && <Image src={DD} alt="Dictionary Dynamo" width={250} height={250} className=" my-2 mx-auto col-span-2  rounded-lg transition-transform scale-110 md:scale-100" />}
+            {entry.title === 'Wandering Scoops' && <Image src={WS} alt="Wandering Scoops" width={250} height={250} className=" my-2 mx-auto col-span-2  rounded-lg transition-transform scale-110 md:scale-100" />}
         </section>
     )
 }

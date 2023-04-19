@@ -9,11 +9,11 @@
     },
     {
         "id":2,
-        "title":"Dictionary Dynamo",
-        "stack":"ReactJS TailwindCSS API",
-        "description": "A dictionary site that is a hub of words with a word of the day generated & a set of flashcards based on school subjects. Using two APIs, I aimed to make the classic dictionary site with a fun twist.",
-        "site":"https://dictionary-dynamo.vercel.app",
-        "repo":"https://github.com/Denito37/dictionary_dynamo"
+        "title":"Wandering Scoops",
+        "stack":"NextJS TailwindCSS API",
+        "description": "A digital newspaper website that is a hub of unique news & interesting information. Using four APIs, I aimed to make a newspaper with a fun twist that keeps people coming back.",
+        "site":"https://newspaper-wandering.vercel.app",
+        "repo":"https://github.com/Denito37/newspaper_wandering"
     },
     {
         "id":3,
