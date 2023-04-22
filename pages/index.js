@@ -8,8 +8,8 @@ import Projects from '../src/components/projects.jsx'
 import Skills from '../src/components/skills.jsx'
 import About from '@/src/components/about'
 import Footer from '../src/components/footer'
-import projectData from '../src/components/dat/projects.json'
-import skillsData from '../src/components/dat/skills.json'
+import projectData from '../src/components/data/projects.json'
+import skillsData from '../src/components/data/skills.json'
 
 export default function Home() {
   const projects = projectData.map(project =>{
@@ -23,6 +23,7 @@ export default function Home() {
     <>
     <Head>
       <title>Dennes Dev Portfolio</title>
+      <link rel="shortcut icon" href="/favicon.ico" />
       <meta name="description" content="Front-end web dev portfolio"></meta>
     </Head>
     <main className='grid place-content-center'>
@@ -44,7 +45,7 @@ export default function Home() {
           <article className=' grid md:grid-cols-2 max-w-6xl justify-items-center'>
             {skills}
           </article>
-          <div className=' max-w-5xl mx-auto grid justify-items-center md:grid-cols-2'>
+          <div className=' max-w-5xl mx-auto grid justify-items-center'>
             <About />
             <Footer /> 
           </div>
