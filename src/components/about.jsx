@@ -2,7 +2,6 @@
 export default function About(){
     return(
         <article className=' w-fit rounded-xl max-w-6xl p-1 mx-8 my-8 md:my-12 '>
-            <section>
                 <h2 className='text-center p-2 text-3xl font-medium'>
                     About Me
                 </h2>
@@ -15,7 +14,6 @@ export default function About(){
                 After this, it became clear to me that web development was the career that I wanted to pursue. 
                 I also enjoy cooking & reading graphic novels in my free time.
                 </p>
-            </section>
         </article>
     )
 }

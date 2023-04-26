@@ -10,7 +10,7 @@
     {
         "id":2,
         "title":"Wandering Scoops",
-        "stack":"NextJS TailwindCSS API",
+        "stack":"NextJS TailwindCSS",
         "description": "A digital newspaper website that is a hub of unique news & interesting information. Using four APIs, I aimed to make a newspaper with a fun twist that keeps people coming back.",
         "site":"https://newspaper-wandering.vercel.app",
         "repo":"https://github.com/Denito37/newspaper_wandering"
@@ -18,7 +18,7 @@
     {
         "id":3,
         "title":"Advice Generator",
-        "stack":"ReactJS TailwindCSS API",
+        "stack":"ReactJS TailwindCSS",
         "description": "Original concept based on an assignment on Frontend Mentor. I added many features on top of the original concept (roll counter, like section, like, delete & clear buttons).",
         "site": "https://advice-generator-denito37.vercel.app",
         "repo": "https://github.com/Denito37/advice_generator"

@@ -8,7 +8,7 @@ export default function Footer() {
     return (
     <footer className=" p-1 mx-auto md:my-12 relative">
 
-        {popUp ? <div className=" absolute top-0 left-[40%] p-4 text-center bg-green-100 text-green-700 rounded-2xl z-10">Copied</div> :null}
+        {popUp ? <div className=" absolute top-0 left-[33%] p-4 text-center bg-green-100 text-green-700 rounded-2xl z-10">Copied</div> :null}
 
         <h2 className=" text-3xl text-center font-medium p-4">
             Contact Me

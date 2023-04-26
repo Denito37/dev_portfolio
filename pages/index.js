@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import WF from 'public/wireFrame.svg'
-import icon from 'public/DWD.png'
 import Header from '../src/components/header'
 import Hero from '../src/components/hero'
 import Projects from '../src/components/projects.jsx'
@@ -27,7 +26,7 @@ export default function Home() {
       <meta name="description" content="Front-end web dev portfolio"></meta>
     </Head>
     <main className='grid place-content-center'>
-      <Image 
+        <Image 
           src={WF} 
           alt='background image ; wireframe wave' 
           priority
@@ -37,18 +36,18 @@ export default function Home() {
         <Hero />
         <h2 className=' p-4 text-center text-3xl font-medium'>
             Projects
-          </h2>
-          {projects}
-          <h2 className=' p-4 text-center text-3xl font-medium'>
-            Skills
-          </h2>
-          <article className=' grid md:grid-cols-2 max-w-6xl justify-items-center'>
+        </h2>
+        {projects}
+        <h2 className=' p-4 text-center text-3xl font-medium'>
+          Skills
+        </h2>
+        <section className=' grid md:grid-cols-2 max-w-6xl justify-items-center'>
             {skills}
-          </article>
-          <div className=' max-w-5xl mx-auto grid justify-items-center'>
-            <About />
-            <Footer /> 
-          </div>
+        </section>
+        <div className=' max-w-5xl mx-auto grid justify-items-center'>
+          <About />
+          <Footer /> 
+        </div>
     </main>
     </>
   )

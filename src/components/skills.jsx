@@ -11,7 +11,7 @@ import figma from 'public/figma.svg'
 import UIUX from 'public/ui-ux.svg'
 export default function Skills({ entry }){
     return(
-        <section className="my-4 text-center flex flex-col max-w-lg">
+        <article className="my-4 text-center flex flex-col max-w-lg">
             <h3 className=" text-3xl font-extralight p-4 my-2">
                 {entry.title}
             </h3>
@@ -41,6 +41,6 @@ export default function Skills({ entry }){
                     <Image title="User Interface & Experience" src={UIUX} alt="UI & UX" width={100} height={'auto'} className=" my-4" />
                 } 
             </div>
-        </section>
+        </article>
     )
 }
